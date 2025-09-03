@@ -1,0 +1,152 @@
+/* LG --> SMALL LAPTOPS: 1024px - 1280px */
+@media (max-width: 72rem){
+    /* 1150px / 16px = 71.875rem */
+    /* 72 * 16px = 1152px */
+
+    html{
+        /* 9px / 16px = 0.5625 */
+        font-size: 56.25%;
+    }
+}
+
+/* MD --> TABLETS: 768px - 1024px */
+@media (max-width: 60rem){
+    /* 950px / 16px = 59.375rem */
+    /* 60 * 16px = 960px */
+
+    html{
+        /* 8px / 16px = 0.5 */
+        font-size: 50%;
+    }
+}
+
+/* EXTRA RESIZING DUE TO COMPONENTS BREAKING */
+@media (max-width: 52rem){
+    /* 822px / 16px = 51.375rem */
+    /* 52 * 16px = 832px */
+    
+    html{
+        /* 7px / 16px = 0.4375 */
+        font-size: 43.75%;
+    }
+}
+
+/* SM --> PHONE LANDSCAPE: 576px - 768px */
+@media (max-width: 45rem){
+    /* 722px / 16px = 45.125rem */
+    /* 45 * 16px = 720px */
+
+    html{
+        /* 5.5px / 16px = 0.34375 */
+        font-size: 34.375%;
+    }
+}
+
+/* XS --> PHONE POTRAIT: < 576px */
+@media (max-width: 36rem){
+    /* 576px / 16px = 36rem */
+    
+    html{
+        /* 5px / 16px = 0.3125 */
+        font-size: 31.25%;
+    }
+
+    body{
+        background: url(images/bg-mobile.png) no-repeat center;
+        background-size: cover;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 300px;
+    }
+
+    .logo-container{
+        width: 100%;
+        border-radius: 1rem;
+        border-top-right-radius: 20rem;
+        padding-right: 0;
+    }
+
+    .logo-container .main-logo{
+        width: 40%;
+        margin: 3rem;
+        padding-right: 0;
+    }
+
+    .logo-container .utilities-logo{
+        width: 50%;
+        margin: 3rem;
+        gap: 2.5rem;
+    }
+
+    .logo-container .utilities-logo .image1, .image2, .image3{
+        padding: 2rem;
+        width: 25%;
+    }
+
+    .storage-details{
+        padding: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .storage-details p{
+        display: inline-block;
+        transform: scaleX(1.1);
+        transform-origin: center;
+        font-size: 2.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .progress-bar{
+        width: 120%;
+        height: 3rem;
+        border-radius: 2rem;
+    }
+
+    .circle{
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.5rem;
+        top: 45%;
+        transform: translateY(-45%);
+    }
+    
+    .range{
+        width: 120%;
+        font-size: 2rem;
+    }
+
+    .floating-box{
+        border-bottom-right-radius: 1rem;
+        top: 27rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2rem;
+        width: 50%;
+
+        gap: 2rem;
+    }
+
+    .floating-box::after{
+        display: none;
+    }
+
+    .floating-box strong{
+        font-size: 7rem;
+    }
+
+    .floating-box span{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
